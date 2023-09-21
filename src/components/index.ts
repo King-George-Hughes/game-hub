@@ -6,6 +6,7 @@ import PlatformIconList from "./PlatformIconList";
 import CriticScore from "./CriticScore";
 import GameCardSkeleton from "./GameCardSkeleton";
 import GameCardContainer from "./GameCardContainer";
+import GenreList from "./GenreList";
 
 export {
   NavBar,
@@ -16,4 +17,5 @@ export {
   CriticScore,
   GameCardSkeleton,
   GameCardContainer,
+  GenreList,
 };
