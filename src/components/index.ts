@@ -3,5 +3,13 @@ import ColorModeSwitch from "./ColorModeSwitch";
 import GameGrid from "./GameGrid";
 import GameCard from "./GameCard";
 import PlatformIconList from "./PlatformIconList";
+import CriticScore from "./CriticScore";
 
-export { NavBar, ColorModeSwitch, GameGrid, GameCard, PlatformIconList };
+export {
+  NavBar,
+  ColorModeSwitch,
+  GameGrid,
+  GameCard,
+  PlatformIconList,
+  CriticScore,
+};
