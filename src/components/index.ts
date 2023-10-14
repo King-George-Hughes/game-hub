@@ -11,6 +11,7 @@ import PlatformSelector from "./PlatformSelector";
 import SortSelector from "./SortSelector";
 import SearchInput from "./SearchInput";
 import GameHeading from "./GameHeading";
+import Emoji from "./Emoji";
 
 export {
   NavBar,
@@ -26,4 +27,5 @@ export {
   SortSelector,
   SearchInput,
   GameHeading,
+  Emoji,
 };
