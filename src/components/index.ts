@@ -10,6 +10,7 @@ import GenreList from "./GenreList";
 import PlatformSelector from "./PlatformSelector";
 import SortSelector from "./SortSelector";
 import SearchInput from "./SearchInput";
+import GameHeading from "./GameHeading";
 
 export {
   NavBar,
@@ -24,4 +25,5 @@ export {
   PlatformSelector,
   SortSelector,
   SearchInput,
+  GameHeading,
 };
