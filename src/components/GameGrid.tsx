@@ -5,16 +5,13 @@ import { GameQuery } from "../App";
 
 interface Props {
   gameQuery: GameQuery;
-  // selectedGenre: Genre | null;
-  // selectedPlatform: Platform | null;
 }
 
 const GameGrid = ({ gameQuery }: Props) => {
-  // const GameGrid = ({ selectedGenre, selectedPlatform }: Props) => {
   const { data: games, error, isLoading } = useGames(gameQuery);
   const skeletons = [1, 2, 3, 4, 5, 6];
 
-  if (error) return <Text>{error}</Text>;
+  if (error) return <Text>{error.message}</Text>;
 
   return (
     <SimpleGrid
@@ -29,7 +26,7 @@ const GameGrid = ({ gameQuery }: Props) => {
           </GameCardContainer>
         ))}
 
-      {games.map((game) => {
+      {games?.results.map((game) => {
         return (
           <GameCardContainer key={game.id}>
             <GameCard game={game} />
