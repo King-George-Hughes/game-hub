@@ -19,6 +19,4 @@ const usePlatforms = () =>
     initialData: { count: platforms.length, results: platforms },
   });
 
-// useData<Platform>()
-
 export default usePlatforms;
