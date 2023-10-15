@@ -9,7 +9,7 @@ import {
 } from "./components";
 import { useState } from "react";
 import { Genre } from "./hooks/useGenres";
-import { Platform } from "./hooks/useGames";
+import { Platform } from "./hooks/usePlatforms";
 
 export interface GameQuery {
   genre: Genre | null;
@@ -20,10 +20,6 @@ export interface GameQuery {
 
 function App() {
   const [gameQuery, setGameQuery] = useState<GameQuery>({} as GameQuery);
-  // const [selectedGenre, setSelectedGenre] = useState<Genre | null>(null);
-  // const [selectedPlatform, setSelectedPlatform] = useState<Platform | null>(
-  //   null
-  // );
 
   return (
     <>
@@ -70,11 +66,7 @@ function App() {
               />
             </HStack>
           </Box>
-          <GameGrid
-            gameQuery={gameQuery}
-            // selectedGenre={gameQuery.genre}
-            // selectedPlatform={gameQuery.platform}
-          />
+          <GameGrid gameQuery={gameQuery} />
         </GridItem>
       </Grid>
     </>
